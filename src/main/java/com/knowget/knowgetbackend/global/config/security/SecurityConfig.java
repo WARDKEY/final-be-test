@@ -38,7 +38,7 @@ public class SecurityConfig {
 				.csrf(CsrfConfigurer<HttpSecurity>::disable)
 				.cors(corsCustomizer -> corsCustomizer.configurationSource(request -> {
 					CorsConfiguration config = new CorsConfiguration();
-					config.setAllowedOrigins(Collections.singletonList("https://d26s7gklfb7nph.cloudfront.net"));
+					config.setAllowedOrigins(Collections.singletonList("http://d26s7gklfb7nph.cloudfront.net"));
 					config.setAllowedMethods(Collections.singletonList("*"));
 					config.setAllowedHeaders(Collections.singletonList("*"));
 					config.setAllowCredentials(true);
